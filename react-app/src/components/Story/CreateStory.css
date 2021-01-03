@@ -2,7 +2,7 @@
 	height: 100%;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #fec017;
+	background-color: #dee2e6;
 	padding-bottom: 50px;
 }
 
@@ -34,7 +34,7 @@
 	border-left: none;
 	border-right: none;
 	font-size: 25px;
-	border-bottom: 1px solid #fec017;
+	border-bottom: 1px solid #dee2e6;
 	margin-bottom: 15px;
 }
 
@@ -56,7 +56,7 @@
 
 .story-submit {
 	color: white;
-	background-color: #fec017;
+	background-color: #dee2e6;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 10px;

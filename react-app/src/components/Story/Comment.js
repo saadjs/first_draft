@@ -2,7 +2,7 @@ import React from "react";
 import parse from "html-react-parser";
 import "./Story.css";
 
-function Comment({ comments, currentUser }) {
+function Comment({ comments }) {
 	return (
 		<div className="comments-container">
 			{comments.map((comment, i) => (

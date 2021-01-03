@@ -65,9 +65,9 @@
 
 .clap-icon {
 	padding: 5px;
-	border: 1px solid #fec017;
+	border: 1px solid #dee2e6;
 	cursor: pointer;
-	color: #fec017;
+	color: #dee2e6;
 	border-radius: 100%;
 	background-color: white;
 	box-shadow: rgba(184, 127, 6, 0.25) 0px 54px 55px,
@@ -180,7 +180,7 @@
 	color: rgb(255, 255, 255);
 	font-weight: 800;
 	padding: 15px 30px;
-	background-color: #fec017;
+	background-color: #dee2e6;
 	margin-top: 20px;
 	width: 100%;
 	border-radius: 5px;
@@ -202,7 +202,7 @@
 }
 
 .pattern-diagonal-lines-md {
-	background-color: #fec017;
+	background-color: #dee2e6;
 }
 
 .update-button {

@@ -59,7 +59,7 @@ const Container = styled.div`
 		font-size: 40px;
 		font-family: "Open Sans", sans-serif;
 		text-align: center;
-		border-bottom: 7px solid #fec017;
+		border-bottom: 7px solid #dee2e6;
 		text-align: center;
 		width: 50%;
 	}
@@ -90,7 +90,7 @@ const Container = styled.div`
 	.master {
 		width: 100%;
 		color: black;
-		background-color: #fec017;
+		background-color: #dee2e6;
 		margin-top: -3em;
 		align-items: center;
 		justify-content: center;

@@ -1,7 +1,7 @@
 .Logged_out_header {
 	margin: 0 !important;
 	display: flex;
-	background-color: #fec017;
+	background-color: #dee2e6;
 	justify-content: space-around;
 	border-bottom: 1px solid black;
 	height: 400px;
@@ -27,7 +27,6 @@
 	font-size: 70px;
 	font-weight: 400;
 	font-family: "Source Serif Pro", serif;
-	
 }
 
 .header_text {
@@ -38,7 +37,7 @@
 	.Logged_out_header {
 		margin: 0 !important;
 		display: flex;
-		background-color: #fec017;
+		background-color: #dee2e6;
 		justify-content: space-around;
 		border-bottom: 1px solid black;
 		height: 300px;
@@ -67,7 +66,7 @@
 	.Logged_out_header {
 		margin: 0 !important;
 		display: flex;
-		background-color: #fec017;
+		background-color: #dee2e6;
 		justify-content: space-around;
 		border-bottom: 1px solid black;
 		height: 350px;
@@ -92,7 +91,6 @@
 	}
 }
 
-
 .start-title {
 	font-size: 50px;
 	margin-top: 40px;
@@ -102,14 +100,14 @@
 	text-align: center;
 	margin-bottom: 80px;
 	text-decoration: underline;
-	text-decoration-color: #fec017;
+	text-decoration-color: #dee2e6;
 }
 
 .feature-title {
 	font-family: "Open Sans", sans-serif;
 	font-size: 20px;
 	text-decoration: underline;
-	text-decoration-color: #fec017;
+	text-decoration-color: #dee2e6;
 	font-weight: 800;
 }
 

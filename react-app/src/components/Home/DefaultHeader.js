@@ -1,5 +1,5 @@
 import React from "react";
-import "./defaultheader.css";
+import "./Defaultheader.css";
 import headerimage from "../images/headerimage.png";
 
 const DefaultHome = ({ authenticated }) => {

@@ -210,7 +210,7 @@ const Stories = styled.div`
 			width: 100%;
 			border-radius: 5px;
 			padding: 10px 40px;
-			background-color: #fec017;
+			background-color: #dee2e6;
 			font-family: "Open Sans", sans-serif;
 			font-weight: 800;
 			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
