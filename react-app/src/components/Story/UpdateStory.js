@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Editor } from "@tinymce/tinymce-react";
 import "./Story.css";
-import "./stories.css";
+import "./CreateStory.css";
 import Modal from "react-modal";
 
 const customStyles = {

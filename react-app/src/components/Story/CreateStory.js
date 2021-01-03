@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Editor } from "@tinymce/tinymce-react";
-import "./stories.css";
+import "./CreateStory.css";
 
 function CreateStory({ authenticate }) {
 	const [title, setTitle] = useState("");

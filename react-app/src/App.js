@@ -4,7 +4,7 @@ import LoginForm from "./components/auth/LoginForm";
 import SignUpForm from "./components/auth/SignUpForm";
 import NavBar from "./components/Navigation/NavBar";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
-import User from "./components/UserProfile/User";
+import Profile from "./components/UserProfile/Profile";
 import { authenticate } from "./services/auth";
 import DefaultHeader from "./components/Home/DefaultHeader";
 import "./index.css";
@@ -12,7 +12,7 @@ import Story from "./components/Story/Story";
 import CreateStory from "./components/Story/CreateStory";
 import UsersList from "./components/UserProfile/UserList";
 import Footer from "./components/Navigation/Footer";
-import MostRecent from "./components/Home/MostRecent";
+import MostRecent from "./components/Home/MostRecentStories";
 import GettingStarted from "./components/Home/GettingStarted";
 
 function App() {
@@ -66,7 +66,7 @@ function App() {
 					exact={true}
 					authenticated={authenticated}
 				>
-					<User authenticate={authenticate} />
+					<Profile authenticate={authenticate} />
 					<Footer />
 				</ProtectedRoute>
 				<Route path="/" exact={true}>
