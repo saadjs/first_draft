@@ -1,8 +1,8 @@
 import React from "react";
 import "./defaultheader.css";
-import signup from "./images/signup.gif";
-import story from "./images/story.gif";
-import commenting from "./images/commenting.gif";
+import signup from "../images/signup.gif";
+import story from "../images/story.gif";
+import commenting from "../images/commenting.gif";
 
 const GettingStarted = ({ authenticated }) => {
 	return authenticated ? (
@@ -32,7 +32,9 @@ const GettingStarted = ({ authenticated }) => {
 						<h1 className="feature-title">
 							Begin sharing your stories.
 						</h1>
-							<p className="feature-text">Registered users can create stories.</p>
+						<p className="feature-text">
+							Registered users can create stories.
+						</p>
 					</div>
 					<div className="pattern-diagonal-lines-sm gray-lighter bg-dots">
 						<img
@@ -45,7 +47,7 @@ const GettingStarted = ({ authenticated }) => {
 				<div className="card-3">
 					<div>
 						<h1 className="feature-title">Share your thoughts.</h1>
-							<p className="feature-text">
+						<p className="feature-text">
 							Registered users have the ability to leave comments
 							on stories.
 						</p>

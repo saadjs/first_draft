@@ -1,6 +1,6 @@
 import React from "react";
 import { demo } from "../../services/auth";
-import "../navbar.css";
+import "../Navigation/navbar.css";
 
 const DemoButton = ({ setAuthenticated, authenticated }) => {
 	const demoPress = async (e) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { logout } from "../../services/auth";
-import "../navbar.css";
+import "../Navigation/navbar.css";
 import { useHistory } from "react-router-dom";
 
 const LogoutButton = ({ setAuthenticated, authenticated }) => {

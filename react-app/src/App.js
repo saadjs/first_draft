@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LoginForm from "./components/auth/LoginForm";
 import SignUpForm from "./components/auth/SignUpForm";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navigation/NavBar";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
-import User from "./components/User";
+import User from "./components/UserProfile/User";
 import { authenticate } from "./services/auth";
-import DefaultHeader from "./components/DefaultHeader";
+import DefaultHeader from "./components/Home/DefaultHeader";
 import "./index.css";
-import Story from "./components/Page/Story";
-import CreateStory from "./components/Page/CreateStory";
-import UsersList from "./components/Page/UserList";
-import Footer from "./components/Footer";
-import MostRecent from "./components/MostRecent";
-import GettingStarted from "./components/GettingStarted";
+import Story from "./components/Story/Story";
+import CreateStory from "./components/Story/CreateStory";
+import UsersList from "./components/UserProfile/UserList";
+import Footer from "./components/Navigation/Footer";
+import MostRecent from "./components/Home/MostRecent";
+import GettingStarted from "./components/Home/GettingStarted";
 
 function App() {
 	const [authenticated, setAuthenticated] = useState(false);
@@ -75,10 +75,7 @@ function App() {
 						className="header"
 					/>
 					<GettingStarted authenticated={authenticated} />
-					{authenticated ?
-						<MostRecent />
-						: ""
-					}
+					{authenticated ? <MostRecent /> : ""}
 					<Footer />
 				</Route>
 				<Route path="/stories/:id">
@@ -98,7 +95,10 @@ function App() {
 						/>
 					)}
 				</Route>
-				<Route path="/users"><UsersList /><Footer /></Route>
+				<Route path="/users">
+					<UsersList />
+					<Footer />
+				</Route>
 			</Switch>
 		</BrowserRouter>
 	);

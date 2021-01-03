@@ -1,8 +1,8 @@
 import React from "react";
 import "./defaultheader.css";
-import headerimage from "./images/headerimage.png";
+import headerimage from "../images/headerimage.png";
 
-const DefaultHome = ({ setAuthenticated, authenticated }) => {
+const DefaultHome = ({ authenticated }) => {
 	return authenticated ? (
 		<div></div>
 	) : (
