@@ -11,7 +11,6 @@ import "./index.css";
 import Story from "./components/Story/Story";
 import CreateStory from "./components/Story/CreateStory";
 import UsersList from "./components/UserProfile/UserList";
-import Footer from "./components/Navigation/Footer";
 import MostRecent from "./components/Home/MostRecentStories";
 import GettingStarted from "./components/Home/GettingStarted";
 
@@ -67,7 +66,6 @@ function App() {
 					authenticated={authenticated}
 				>
 					<Profile authenticate={authenticate} />
-					<Footer />
 				</ProtectedRoute>
 				<Route path="/" exact={true}>
 					<DefaultHeader
@@ -76,17 +74,14 @@ function App() {
 					/>
 					<GettingStarted authenticated={authenticated} />
 					{authenticated ? <MostRecent /> : ""}
-					<Footer />
 				</Route>
 				<Route path="/stories/:id">
 					<Story authenticate={authenticate} />
-					<Footer />
 				</Route>
 				<Route path="/stories">
 					{authenticated ? (
 						<div>
 							<CreateStory authenticate={authenticate} />
-							<Footer />
 						</div>
 					) : (
 						<LoginForm
@@ -97,7 +92,6 @@ function App() {
 				</Route>
 				<Route path="/users">
 					<UsersList />
-					<Footer />
 				</Route>
 			</Switch>
 		</BrowserRouter>
