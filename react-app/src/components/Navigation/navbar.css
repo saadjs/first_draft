@@ -1,9 +1,13 @@
 .loggedout {
 	margin: 0;
 	display: flex;
-	background-color: #dee2e6;
+	background-color: #212529;
 	justify-content: space-around;
 	border-bottom: 1px solid black;
+}
+
+.loggedout a {
+	color: #dee2e6;
 }
 
 .loggedin {
@@ -13,6 +17,10 @@
 	justify-content: space-around;
 	border: none;
 	border-bottom: 1px solid black;
+}
+
+.loggedin a {
+	color: #212529;
 }
 
 .logo_text {
@@ -42,7 +50,7 @@ a {
 	text-decoration: none;
 	font-weight: 300;
 	font-size: 15px;
-	color: black;
+	color: red;
 }
 
 a:hover {

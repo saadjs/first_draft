@@ -8,30 +8,14 @@ import { faUser, faFeatherAlt } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = ({ setAuthenticated, authenticated, authenticate }) => {
 	const [userId, setUserId] = useState("");
-	// const [currentUser, setCurrentUser] = useState("");
 
 	useEffect(() => {
 		(async () => {
 			const response = await authenticate();
 			const id = response.id;
-			// const user = response.username;
 			setUserId(id);
-			// setCurrentUser(user);
 		})();
 	});
-
-	const greeting = () => {
-		let greeting;
-		let time = new Date().getHours();
-		if (time < 12) {
-			greeting = "Good morning";
-		} else if (time < 17) {
-			greeting = "Good afternoon";
-		} else {
-			greeting = "Good evening";
-		}
-		return greeting;
-	};
 
 	let navTheme;
 	if (authenticated) {
@@ -55,11 +39,6 @@ const NavBar = ({ setAuthenticated, authenticated, authenticate }) => {
 						<FontAwesomeIcon icon={faFeatherAlt} />
 					</h1>
 				</a>
-				{authenticated ? (
-					<h2 className="welcome-message">{greeting()}</h2>
-				) : (
-					""
-				)}
 			</div>
 			<ul className="nav_links">
 				<li>
